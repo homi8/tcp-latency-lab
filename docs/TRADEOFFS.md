@@ -45,7 +45,7 @@ distribution, so it pays for neither HTTP/2 nor protobuf there.**
   side skips work.
 - gRPC runs with default channel/server options — production would tune
   (message caps, polling threads, arenas). Tuning narrows the gap; it does
-  not close it, because items 1–4 above are structural.
+  not close it, because items 1–4 above are structural
 - Loopback flatters both and hides NIC/switch effects equally. It is the
   right place to compare *software* overhead, which is the point here.
 - The TCP tick stream paces with `poll()` timeouts; the gRPC one sleeps per
