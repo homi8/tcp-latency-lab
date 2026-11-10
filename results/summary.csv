@@ -1,0 +1,7 @@
+benchmark,transport,n,ops_per_s,p50_us,p99_us,max_us
+order,TCP,50000,33792,27.8,62.4,186.7
+throughput,TCP,200000,174464,387.2,517.7,718.2
+tick2trade,TCP,20000,9999,26.8,65.9,131.7
+order,gRPC,5000,6841,140.8,206.4,275.8
+throughput,gRPC,20000,24697,318.6,470.8,4324.7
+tick2trade,gRPC,2000,1498,222.6,396.8,1488.9
