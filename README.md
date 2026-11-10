@@ -4,11 +4,6 @@ A mock electronic exchange in C++17 with two transports — raw TCP sockets and
 gRPC — and a benchmark client that measures the metrics HFT interviews ask
 about: **tick-to-trade latency, order-entry RTT, tail latency, and jitter**.
 
-Built from the advice in
-["This quant project got him a T1 interview"](https://www.youtube.com/shorts/H9j87IfIgf4):
-Linux + networking from first principles, client/server architecture, and
-benchmarking with a real hot path.
-
 ## The three skills, mapped to files
 
 1. **Linux + networking** — `src/mock_exchange.cpp` is a single-threaded
