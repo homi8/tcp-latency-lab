@@ -1,0 +1,2 @@
+[grpc/order] n=5000 elapsed=0.731s throughput=6841 op/s bw=0.21 MB/s
+  us  min=    93.8 p50=   140.8 p90=   175.8 p99=   206.4 p999=   234.0 max=   275.8 mean=   146.1 sd=    21.0

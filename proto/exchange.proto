@@ -1,0 +1,38 @@
+// Same mock-exchange semantics as the raw TCP wire protocol (see src/wire.h),
+// expressed as protobuf + gRPC so the benchmark compares like with like:
+// unary PlaceOrder against TCP order-entry, server-streaming StreamTicks
+// against the TCP tick stream.
+syntax = "proto3";
+
+package latencylab;
+
+service Exchange {
+  rpc PlaceOrder (Order) returns (Ack);
+  rpc StreamTicks (Subscribe) returns (stream Tick);
+}
+
+message Subscribe {
+  bool on = 1;
+}
+
+message Order {
+  string symbol = 1;
+  int32 side = 2;  // 0 = bid, 1 = ask
+  int64 price = 3;  // integer price (e.g. cents)
+  int32 qty = 4;
+  uint64 client_id = 5;
+}
+
+message Ack {
+  uint64 client_id = 1;
+  int32 status = 2;  // 0 = accepted
+  uint64 exch_recv_ns = 3;
+}
+
+message Tick {
+  string symbol = 1;
+  int64 price = 2;
+  int32 qty = 3;
+  uint64 seq = 4;
+  uint64 send_ns = 5;
+}

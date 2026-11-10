@@ -1,0 +1,2 @@
+grpc_exchange_server listening on 0.0.0.0:50051 tick_rate=2000
+[mutex.cc : 2154] RAW: Check waitp == nullptr || waitp->thread->waitp == nullptr || waitp->thread->suppress_fatal_errors failed: detected illegal recursion into Mutex code
