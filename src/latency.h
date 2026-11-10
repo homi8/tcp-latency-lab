@@ -60,11 +60,14 @@ class LatencyStats {
                 pct(0.90), pct(0.99), pct(0.999), s.back(), mean, sd);
   }
 
+  // Two columns on purpose: single-column CSVs contain no commas, which
+  // GitHub's table renderer rejects ("No commas found in this CSV file").
   bool write_csv(const std::string& path) const {
     FILE* f = std::fopen(path.c_str(), "w");
     if (!f) return false;
-    std::fprintf(f, "rtt_us\n");
-    for (double v : samples_) std::fprintf(f, "%.3f\n", v);
+    std::fprintf(f, "sample,rtt_us\n");
+    for (std::size_t i = 0; i < samples_.size(); ++i)
+      std::fprintf(f, "%zu,%.3f\n", i + 1, samples_[i]);
     std::fclose(f);
     return true;
   }

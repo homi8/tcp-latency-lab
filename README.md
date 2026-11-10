@@ -56,11 +56,11 @@ Apple M1 Pro, loopback, 2026-11-10 (microseconds unless noted):
 
 | Benchmark | TCP p50 | TCP p99 | TCP max | TCP op/s | gRPC p50 | gRPC p99 | gRPC max | gRPC op/s |
 |---|---|---|---|---|---|---|---|---|
-| `order` | 27.8 | 62.4 | 186.7 | 33,792 | 140.8 | 206.4 | 275.8 | 6,841 |
-| `throughput` | 387.2 | 517.7 | 718.2 | 174,464 | 318.6 | 470.8 | 4324.7 | 24,697 |
-| `tick2trade` | 26.8 | 65.9 | 131.7 | 9,999 | 222.6 | 396.8 | 1488.9 | 1,498 |
+| `order` | 22.6 | 49.2 | 124.8 | 43,186 | 136.7 | 203.9 | 1304.8 | 7,198 |
+| `throughput` | 366.0 | 523.8 | 797.6 | 183,139 | 282.9 | 440.6 | 3118.8 | 27,687 |
+| `tick2trade` | 25.9 | 73.3 | 1795.3 | 9,999 | 226.7 | 544.5 | 4198.2 | 1,467 |
 
-Headline: order-entry RTT ~5×, tick-to-trade ~8×, sustained throughput ~7×
+Headline: order-entry RTT ~6×, tick-to-trade ~9×, sustained throughput ~7×
 in favor of raw TCP. (Throughput-mode per-op latency looks close because the
 two modes use different concurrency — pipelined window vs threads — so the
 rate column is the comparison there; Little's law checks out on both.)

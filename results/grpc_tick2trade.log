@@ -1,7 +1,7 @@
-[grpc/tick2trade] n=2000 elapsed=1.336s throughput=1498 op/s bw=0.00 MB/s
-  us  min=   138.5 p50=   222.6 p90=   288.0 p99=   396.8 p999=   864.6 max=  1488.9 mean=   233.1 sd=    59.2
-[grpc/tick2trade/order-leg] n=2000 elapsed=1.336s throughput=1498 op/s bw=0.00 MB/s
-  us  min=   138.5 p50=   222.6 p90=   287.9 p99=   396.8 p999=   864.6 max=  1488.9 mean=   233.1 sd=    59.2
-[grpc/tick2trade/wire] n=2000 elapsed=1.336s throughput=1498 op/s bw=0.00 MB/s
-  us  min=    62.2 p50=   100.1 p90=   132.0 p99=   193.4 p999=   808.4 max=  1180.1 mean=   106.5 sd=    46.3
-[grpc/tick2trade] seq_gaps=0 ticks_per_sec=1498
+[grpc/tick2trade] n=2000 elapsed=1.363s throughput=1467 op/s bw=0.00 MB/s
+  us  min=   120.1 p50=   226.7 p90=   322.8 p99=   544.5 p999=  3521.8 max=  4198.2 mean=   247.9 sd=   160.3
+[grpc/tick2trade/order-leg] n=2000 elapsed=1.363s throughput=1467 op/s bw=0.00 MB/s
+  us  min=   120.1 p50=   226.6 p90=   322.7 p99=   544.4 p999=  3521.7 max=  4198.1 mean=   247.9 sd=   160.3
+[grpc/tick2trade/wire] n=2000 elapsed=1.363s throughput=1467 op/s bw=0.00 MB/s
+  us  min=    57.4 p50=    99.8 p90=   140.9 p99=   243.5 p999=   853.3 max=  4064.0 mean=   109.3 sd=   101.1
+[grpc/tick2trade] seq_gaps=0 ticks_per_sec=1467

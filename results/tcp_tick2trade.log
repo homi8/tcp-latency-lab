@@ -1,7 +1,7 @@
 [tcp/tick2trade] n=20000 elapsed=2.000s throughput=9999 op/s bw=0.97 MB/s
-  us  min=    17.4 p50=    26.8 p90=    39.3 p99=    65.9 p999=   103.5 max=   131.7 mean=    29.5 sd=     9.1
+  us  min=    14.4 p50=    25.9 p90=    41.1 p99=    73.3 p999=   426.7 max=  1795.3 mean=    29.8 sd=    28.6
 [tcp/tick2trade/order-leg] n=20000 elapsed=2.000s throughput=9999 op/s bw=0.00 MB/s
-  us  min=    17.1 p50=    26.7 p90=    39.1 p99=    65.3 p999=   100.3 max=   131.5 mean=    29.3 sd=     9.0
+  us  min=    14.2 p50=    25.8 p90=    40.5 p99=    67.2 p999=   118.1 max=  1735.9 mean=    28.7 sd=    17.6
 [tcp/tick2trade/wire] n=20000 elapsed=2.000s throughput=9999 op/s bw=0.00 MB/s
-  us  min=     9.9 p50=    16.7 p90=    23.7 p99=    40.4 p999=    65.4 max=   142.2 mean=    17.4 sd=     6.2
+  us  min=     8.0 p50=    15.1 p90=    25.5 p99=    46.8 p999=   106.4 max=   221.9 mean=    17.1 sd=     9.5
 [tcp/tick2trade] seq_gaps=0 ticks_per_sec=9999

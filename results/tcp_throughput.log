@@ -1,2 +1,2 @@
-[tcp/throughput] n=200000 elapsed=1.146s throughput=174464 op/s bw=9.77 MB/s
-  us  min=    71.0 p50=   387.2 p90=   488.6 p99=   517.7 p999=   573.0 max=   718.2 mean=   366.8 sd=   104.8
+[tcp/throughput] n=200000 elapsed=1.092s throughput=183139 op/s bw=10.26 MB/s
+  us  min=    74.1 p50=   366.0 p90=   444.0 p99=   523.8 p999=   639.6 max=   797.6 mean=   349.4 sd=    85.9

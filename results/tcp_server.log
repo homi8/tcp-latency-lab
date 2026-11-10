@@ -1,2 +1,2 @@
 mock_exchange listening on 127.0.0.1:5000 tick_rate=10000
-mock_exchange exit conns=2 orders=20000 ticks=20714 out_bytes=1260000
+mock_exchange exit conns=2 orders=20000 ticks=20658 out_bytes=1260000
